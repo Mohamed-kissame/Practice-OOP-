@@ -14,7 +14,7 @@ private:
 	string _Email;
 	string _Phone;
 	string _Department;
-	int _Salary;
+	float _Salary;
 
 	string FullName() {
 
@@ -23,7 +23,7 @@ private:
 
 public:
 
-	clsEmployee(int Id ,string FirstName, string LastName, string Title, string Email, string Phone, string Department, int salary) {
+	clsEmployee(int Id ,string FirstName, string LastName, string Title, string Email, string Phone, string Department, float salary) {
 
 		_Id = Id;
 		_FirstNAme = FirstName;
@@ -101,12 +101,12 @@ public:
 		return _Department;
 	}
 
-	void SetSalary(int salary) {
+	void SetSalary(float salary) {
 
 		_Salary = salary;
 	}
 
-	int Salary() {
+	float Salary() {
 
 		return _Salary;
 	}
